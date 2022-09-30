@@ -188,7 +188,7 @@
   .contact-info-details {
     text-align: center;
     order: unset;
-    width: 290px;
+    width: inherit;
   }
 }
 
