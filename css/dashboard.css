@@ -1,0 +1,226 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.login-btn {
+  background: #008f7d;
+  color: #fff;
+  border: transparent;
+}
+
+.toogle-menu {
+  padding-top: 120px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.button-wrap {
+  display: grid;
+  grid-template-columns: 234px 234px 234px 234px 234px;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  overflow-x: scroll;
+}
+
+.button-wrap::-webkit-scrollbar {
+  display: none;
+}
+
+a.button {
+  display: inline-block;
+  width: 234px;
+  padding: 0px 0px 16px;
+  background-color: transparent;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #a0a7a7;
+}
+a.button svg {
+  fill: #a0a7a7;
+}
+
+a.active {
+  color: #008f7d;
+  border-bottom: 2px solid #008f7d;
+}
+
+a.active svg {
+  fill: #008f7d;
+}
+
+.w-25 {
+  min-width: 25%;
+}
+.th-container th {
+  width: 13%;
+}
+.th-container2 th {
+  width: 40%;
+}
+
+.subscribe-btn-td {
+  display: flex;
+  column-gap: 26px;
+  float: right;
+  width: fit-content;
+}
+
+.app-usage-btn {
+  float: right;
+  border: 1px solid #3e4b4b;
+  font-family: "IBM Plex Mono";
+  background-color: transparent;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+  padding: 8px 26px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #3e4b4b;
+  border: #008f7d;
+  background-color: #008f7d;
+  color: #fff;
+}
+
+.subscribe-btn {
+  width: auto;
+  float: left;
+}
+
+.content {
+  display: inline-block;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin: 0 auto;
+}
+
+.content-1 {
+  width: 100%;
+}
+
+div[class*="content-"] {
+  display: none;
+}
+
+div.active {
+  display: block;
+}
+.main-table {
+  position: relative;
+  margin: 0;
+}
+
+.table-head {
+  /* H4 | Subtitle 2 */
+
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 600;
+  margin: 50px 0 18px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #3e4b4b;
+}
+.extended-btn-td {
+  display: none;
+  list-style-type: none;
+}
+.table-head {
+  text-align: left;
+}
+
+.margin-143 {
+  margin-top: 143px;
+}
+@media screen and (max-width: 1141px) {
+  .button-wrap {
+    justify-content: unset;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  .content-1,
+  .content-2 {
+    width: inherit;
+    text-align: center;
+    padding: 0 15px;
+  }
+  .main-table {
+    width: 100%;
+  }
+  .app-usage-btn {
+    margin-top: 16px;
+    display: block;
+    float: none;
+  }
+  td {
+    position: relative;
+  }
+  .extended-btn-td {
+    position: relative;
+    display: inline-block;
+  }
+  .extended-dropdown {
+    display: none;
+  }
+
+  .dropdown-div {
+    text-align: left;
+    position: absolute;
+    width: 140px;
+    right: 0px;
+    border-bottom: 1px solid #e7e7e7;
+    /* Button text */
+    background: #ffffff;
+    box-shadow: 0px 2px 16px -4px rgba(72, 68, 68, 0.16);
+    font-family: "IBM Plex Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 138% */
+
+    /* text 2 */
+
+    color: #3e4b4b;
+  }
+
+  .show-dropdown {
+    display: block;
+  }
+
+  .dropdown-div li {
+    font-family: "IBM Plex Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 8px 32px 8px 8px;
+    /* identical to box height, or 138% */
+    border-bottom: 1px solid #e7e7e7;
+    color: #3e4b4b;
+  }
+
+  .extended-btn {
+    display: none;
+  }
+
+  .extended-btn-td::before {
+    content: "\2807";
+    font-size: 20px;
+  }
+}

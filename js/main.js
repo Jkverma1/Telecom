@@ -221,3 +221,10 @@ var closebtn = document.getElementsByClassName("close")[0];
 closebtn.onclick = function () {
   modal.style.display = "none";
 };
+
+$(document).on('click', '.map-point-sm', function() {
+  var show = $(this).data('show');
+  $(show).removeClass("hide").siblings().addClass("hide");
+});
+
+
