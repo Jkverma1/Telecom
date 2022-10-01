@@ -213,3 +213,11 @@ $(document).ready(function () {
   });
   // END //
 });
+
+var modal = document.getElementById("buy-api");
+// When the user clicks on <span> (x), close the modal
+// Get the <span> element that closes the modal
+var closebtn = document.getElementsByClassName("close")[0];
+closebtn.onclick = function () {
+  modal.style.display = "none";
+};
