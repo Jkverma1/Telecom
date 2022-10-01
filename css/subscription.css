@@ -76,6 +76,10 @@ td {
   color: #3e4b4b;
 }
 
+.data-column {
+  display: none;
+}
+
 .subscribe-btn {
   float: right;
   border: 1px solid #3e4b4b;
@@ -96,6 +100,37 @@ td {
   border: #008f7d;
   background-color: #008f7d;
   color: #fff;
+}
+
+
+
+@-webkit-keyframes leftRight {
+  0% {
+    -webkit-transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(-10px);
+  }
+  75% {
+    -webkit-transform: translateX(10px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+@keyframes leftRight {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 /* 
@@ -122,6 +157,10 @@ and also iPads specifically.
 @media screen and (max-width: 690px) {
   table {
     width: 290px;
+  }
+
+  .second-col {
+    width: 100%;
   }
 
   /* Force table to not be like tables anymore */
@@ -157,15 +196,21 @@ and also iPads specifically.
     position: relative;
     padding-left: 80%;
   }
+  td:nth-child(2) {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  td:nth-child(3) {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
   .td:nth-child(4) {
     background-color: #1e1e1e;
   }
-
-  .first-col,
-  .second-col,
-  td,
-  th {
-    width: auto;
+  .data-column {
+    display: inline;
   }
 
   td:before {
