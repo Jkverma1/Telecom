@@ -16,20 +16,77 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <script
       src="https://kit.fontawesome.com/c274061b40.js"
       crossorigin="anonymous"
     ></script>
+    <!-- script -->
+    <script src="js/jquery-3.6.1.js"></script>
+    <script src="js/semantic.min.js"></script>
 
     <!-- css -->
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/semantic.min.css">
     <link rel="stylesheet" href="css/pricing.css" />
     <link rel="stylesheet" href="css/dashboard.css" />
     <link rel="stylesheet" href="fonts/fontawesome-free/css/all.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="css/about.css" />
+    
   </head>
   <body>
+    <div class="background-overlay-popup">
+      <div class="buy-api-popup">
+        <span class="close-btn" onclick="closeApipopup()">&times;</span>
+        <h1 class="logout-popup-head">Buy API Credit</h1>
+        <div class="api-frame">
+          <div class="api-frame-input">
+            <label for="credit-for-buy">How Many API Credit to buy</label>
+            <input class="credit-for-buy" type="text" name="credit-for-buy" id="" placeholder="1000">
+          </div>
+          <div class="api-frame-input m-32">
+            <label for="">The Cost is</label>
+            <label for="">$500</label>
+          </div>
+
+        </div>
+        <div class="logout-popup-btn-container">
+          <a class="logout-btn" href="#">Pay Now</a>
+        </div>
+      </div>
+      <div class="extend-date-popup">
+        <span class="close-btn" onclick="closeextendDate()">&times;</span>
+        <h1 class="logout-popup-head">Extend the monitoring quota</h1>
+        <div class="api-frame">
+          <div class="api-frame-input">
+            <label for="credit-for-buy">Date</label>
+              <div class="ui calendar" id="example1">
+                <div class="ui input icon">
+                  <input type="text" placeholder="29/09/2023">
+                  <svg class="calender-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.0625 0C3.17853 0 3.28981 0.0460936 3.37186 0.128141C3.45391 0.210188 3.5 0.321468 3.5 0.4375V0.875H10.5V0.4375C10.5 0.321468 10.5461 0.210188 10.6281 0.128141C10.7102 0.0460936 10.8215 0 10.9375 0C11.0535 0 11.1648 0.0460936 11.2469 0.128141C11.3289 0.210188 11.375 0.321468 11.375 0.4375V0.875H12.25C12.7141 0.875 13.1592 1.05937 13.4874 1.38756C13.8156 1.71575 14 2.16087 14 2.625V12.25C14 12.7141 13.8156 13.1592 13.4874 13.4874C13.1592 13.8156 12.7141 14 12.25 14H1.75C1.28587 14 0.840752 13.8156 0.512563 13.4874C0.184374 13.1592 0 12.7141 0 12.25V2.625C0 2.16087 0.184374 1.71575 0.512563 1.38756C0.840752 1.05937 1.28587 0.875 1.75 0.875H2.625V0.4375C2.625 0.321468 2.67109 0.210188 2.75314 0.128141C2.83519 0.0460936 2.94647 0 3.0625 0V0ZM1.75 1.75C1.51794 1.75 1.29538 1.84219 1.13128 2.00628C0.967187 2.17038 0.875 2.39294 0.875 2.625V3.5H13.125V2.625C13.125 2.39294 13.0328 2.17038 12.8687 2.00628C12.7046 1.84219 12.4821 1.75 12.25 1.75H1.75ZM13.125 4.375H0.875V12.25C0.875 12.4821 0.967187 12.7046 1.13128 12.8687C1.29538 13.0328 1.51794 13.125 1.75 13.125H12.25C12.4821 13.125 12.7046 13.0328 12.8687 12.8687C13.0328 12.7046 13.125 12.4821 13.125 12.25V4.375Z" fill="#4E4B4B"/>
+                    </svg> 
+                </div>
+              </div>
+              <script>
+                $('#example1').calendar({
+                  type: 'date'
+                });
+              </script>
+          </div>
+          <div class="api-frame-input m-32">
+            <label for="">The Cost is</label>
+            <label for="">$500</label>
+          </div>
+
+        </div>
+        <div class="logout-popup-btn-container">
+          <a class="logout-btn" href="#">Pay Now</a>
+        </div>
+      </div>
+
+    </div>
     <nav class="nav affix">
       <div class="container">
         <div class="logo">
@@ -51,14 +108,6 @@
               <a class="login-btn topfix" id="login-btn" onclick="logoutbtn()"
                 >Log Out</a
               >
-              <script>
-                function logoutbtn(){
-                  document.querySelector(".logout-popup").style.display ="unset";
-                }
-                function closelogoutpopup(){
-                  document.querySelector(".logout-popup").style.display ="none";
-                }
-              </script>
             </li>
           </ul>
         </div>
@@ -166,32 +215,42 @@
       </div>
 
       <div class="content">
-        <section class="content-1 active">
-          <h1 class="table-head">You are not yet subscribed to any data</h1>
+        <section class="content-1 active Dashboard">
+          <h1 class="table-head">You have subscribe to the following data</h1>
           <table class="main-table">
             <thead>
-              <tr>
-                <th class="w-50">Data Type</th>
+              <tr class="th-container2">
+                <th>Data Type</th>
+                <th>Expiry Date</th>
                 <th></th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>LRN</td>
+                <td>2022-12-31</td>
                 <td class="subscribe-btn-td">
-                  <button class="subscribe-btn">subscribe</button>
+                  <button class="subscribe-btn">
+                    Extend
+                  </button>
                 </td>
               </tr>
               <tr>
                 <td>DNC</td>
+                <td>2022-12-31</td>
                 <td class="subscribe-btn-td">
-                  <button class="subscribe-btn">subscribe</button>
+                  <button class="subscribe-btn">
+                    Extend
+                  </button>
                 </td>
               </tr>
               <tr>
                 <td>LERG</td>
+                <td>2022-12-31</td>
                 <td class="subscribe-btn-td">
-                  <button class="subscribe-btn">subscribe</button>
+                  <button class="subscribe-btn">
+                    Extend
+                  </button>
                 </td>
               </tr>
             </tbody>
@@ -209,10 +268,10 @@
             <tbody>
               <tr>
                 <td>0</td>
-                <td></td>
-                <td></td>
+                <td>3202</td>
+                <td>2022-12-31</td>
                 <td class="subscribe-btn-td">
-                  <button class="subscribe-btn extended-btn">Extend</button>
+                  <button class="subscribe-btn extended-btn" onclick="extenddatepopup()">Extend</button>
                   <button class="subscribe-btn extended-btn">Add Quota</button>
                   <ul class="extended-btn-td" onclick="showDropdown()">
                     <div class="dropdown-div">
@@ -239,9 +298,9 @@
             <tbody>
               <tr>
                 <td>0</td>
-                <td></td>
+                <td>520 / 10000</td>
                 <td class="subscribe-btn-td">
-                  <button class="subscribe-btn extended-btn">
+                  <button class="subscribe-btn extended-btn" onclick="buyApipopup()">
                     Purchase More
                   </button>
                   <ul class="extended-btn-td" onclick="showDropdown()">
