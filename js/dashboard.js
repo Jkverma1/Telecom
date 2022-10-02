@@ -49,4 +49,32 @@ function closeRenewPrice() {
   document.querySelector(".background-overlay-popup").style.display = "none";
 }
 
+function confirmPaymentTask(){
+  document.querySelector(".confirm-payment-task-popup").style.display = "unset";
+}
 
+function closeconfirmPaymentTask(){
+  document.querySelector(".confirm-payment-task-popup").style.display = "none";
+}
+
+function subBtn1() {
+  let subBtn1 = document.querySelector(".first-button");
+  let subBtn2 = document.querySelector(".second-button");
+  subBtn1.style.color = "#008f7d";
+  subBtn1.style.borderBottom = "2px solid #008f7d";
+  document.getElementById("sub-tab-1").style.display ="unset";
+  document.getElementById("sub-tab-2").style.display ="none";
+  subBtn2.style.color = "#A0A7A7";
+  subBtn2.style.borderBottom = "none";
+}
+
+function subBtn2() {
+  let subBtn1 = document.querySelector(".first-button");
+  let subBtn2 = document.querySelector(".second-button");
+  subBtn1.style.color = "#A0A7A7";
+  subBtn1.style.borderBottom = "none";
+  document.getElementById("sub-tab-1").style.display ="none";
+  document.getElementById("sub-tab-2").style.display ="unset";
+  subBtn2.style.color = "#008f7d";
+  subBtn2.style.borderBottom = "2px solid #008f7d";
+}

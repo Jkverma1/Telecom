@@ -28,7 +28,8 @@
   display: none;
 }
 
-a.button {
+a.button,
+a.sub-button {
   display: inline-block;
   width: 234px;
   padding: 0px 0px 16px;
@@ -45,7 +46,8 @@ a.button {
   text-transform: capitalize;
   color: #a0a7a7;
 }
-a.button svg {
+a.button svg,
+a.sub-button {
   fill: #a0a7a7;
 }
 
@@ -157,12 +159,77 @@ section.active {
 .margin-143 {
   margin-top: 143px;
 }
+
+.btnPrevious,
+.btnNext {
+  display: inline-block;
+  border: 1px solid #444348;
+  border-radius: 3px;
+  margin: 5px;
+  color: #444348;
+  font-size: 14px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.sub-btn-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+}
+
+.m68-5 {
+  padding-top: 68.5px;
+}
+
+.sub-btn {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+  width: 585px;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 16px 0;
+  background: transparent;
+  border: none;
+
+  /* Primary green */
+
+  color: #a0a7a7;
+}
+
+.active-sub-btn {
+  color: #008f7d;
+  border-bottom: 2px solid #008f7d;
+}
+
+#sub-tab-2 {
+  display: none;
+}
+@media screen and (max-width: 1170px) {
+  .sub-btn {
+    width: 345px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .sub-btn {
+    width: 144.5px;
+  }
+}
+
 @media screen and (max-width: 1141px) {
   .button-wrap {
     justify-content: unset;
   }
   .number-mapping {
     padding-bottom: 0;
+  }
+  .confirm-payment-text-div {
+    width: 538px;
   }
 }
 
@@ -251,7 +318,8 @@ section.active {
 .logout-popup,
 .buy-api-popup,
 .extend-date-popup,
-.renew-price-popup {
+.renew-price-popup,
+.confirm-payment-task-popup {
   display: none;
   position: fixed;
   top: 80px;
@@ -429,6 +497,10 @@ section.active {
   text-align: center;
   padding: 0 48px;
   width: 474px;
+}
+
+.confirm-payment-text-div {
+  width: 608px;
 }
 
 .api-frame {
