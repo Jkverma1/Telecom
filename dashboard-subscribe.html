@@ -415,9 +415,39 @@
         </div>
       </form>
     </section>
-        </section>
         <section class="content-2">Button 4 Content</section>
-        <section class="content-2">Button 5 Content</section>
+
+        <section class="content-2 data-subscription-section">  
+          <div class="data-sub-table-container">
+            <table class="data-subscription-table">
+              <thead>
+                <tr>
+                  <th>Data Type</th>
+                  <th>Subscription Expiry Date</th>
+                  <th>Subscription Expiry Date</th>
+                  <th>Download Key</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-column="Data type">DNC</td>
+                  <td data-column="Frequency">22-09-2022</td>
+                  <td data-column="Monthly Fee">01-01-2023</td>
+                  <td>Info Placeholder</td>
+                  <td><button class="subscribe-btn">Download</button></td>
+                </tr>
+                <tr>
+                  <td data-column="Data type">LRN</td>
+                  <td data-column="Frequency">22-09-2022</td>
+                  <td data-column="Monthly Fee">01-01-2023</td>
+                  <td>Info Placeholder</td>
+                  <td><button class="subscribe-btn">Download</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
       </div>
     </section>
 
@@ -523,7 +553,6 @@
         ($siblings = $this.parent().children()),
           (position = $siblings.index($this));
         console.log(position);
-
         $(".content section").removeClass("active").eq(position).addClass("active");
 
         $siblings.removeClass("active");

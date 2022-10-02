@@ -48,3 +48,5 @@ function closeRenewPrice() {
   document.querySelector(".renew-price-popup").style.display = "none";
   document.querySelector(".background-overlay-popup").style.display = "none";
 }
+
+
