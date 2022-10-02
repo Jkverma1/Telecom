@@ -49,11 +49,11 @@ function closeRenewPrice() {
   document.querySelector(".background-overlay-popup").style.display = "none";
 }
 
-function confirmPaymentTask(){
+function confirmPaymentTask() {
   document.querySelector(".confirm-payment-task-popup").style.display = "unset";
 }
 
-function closeconfirmPaymentTask(){
+function closeconfirmPaymentTask() {
   document.querySelector(".confirm-payment-task-popup").style.display = "none";
 }
 
@@ -62,8 +62,8 @@ function subBtn1() {
   let subBtn2 = document.querySelector(".second-button");
   subBtn1.style.color = "#008f7d";
   subBtn1.style.borderBottom = "2px solid #008f7d";
-  document.getElementById("sub-tab-1").style.display ="unset";
-  document.getElementById("sub-tab-2").style.display ="none";
+  document.getElementById("sub-tab-1").style.display = "unset";
+  document.getElementById("sub-tab-2").style.display = "none";
   subBtn2.style.color = "#A0A7A7";
   subBtn2.style.borderBottom = "none";
 }
@@ -73,8 +73,30 @@ function subBtn2() {
   let subBtn2 = document.querySelector(".second-button");
   subBtn1.style.color = "#A0A7A7";
   subBtn1.style.borderBottom = "none";
-  document.getElementById("sub-tab-1").style.display ="none";
-  document.getElementById("sub-tab-2").style.display ="unset";
+  document.getElementById("sub-tab-1").style.display = "none";
+  document.getElementById("sub-tab-2").style.display = "unset";
   subBtn2.style.color = "#008f7d";
   subBtn2.style.borderBottom = "2px solid #008f7d";
+}
+
+function subBtn3() {
+  let subBtn3 = document.querySelector(".third-button");
+  let subBtn4 = document.querySelector(".fourth-button");
+  subBtn3.style.color = "#008f7d";
+  subBtn3.style.borderBottom = "2px solid #008f7d";
+  document.getElementById("sub-tab-3").style.display = "unset";
+  document.getElementById("sub-tab-4").style.display = "none";
+  subBtn4.style.color = "#A0A7A7";
+  subBtn4.style.borderBottom = "none";
+}
+
+function subBtn4() {
+  let subBtn3 = document.querySelector(".third-button");
+  let subBtn4 = document.querySelector(".fourth-button");
+  subBtn3.style.color = "#A0A7A7";
+  subBtn3.style.borderBottom = "none";
+  document.getElementById("sub-tab-3").style.display = "none";
+  document.getElementById("sub-tab-4").style.display = "unset";
+  subBtn4.style.color = "#008f7d";
+  subBtn4.style.borderBottom = "2px solid #008f7d";
 }

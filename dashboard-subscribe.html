@@ -467,7 +467,100 @@
           </div>
           <div id="sub-tab-2">sub tab 2</div>
         </section>
-        <section class="content-2">Button 4 Content</section>
+        <section class="content-2">
+          <div class="sub-btn-container">
+            <button class="third-button sub-btn active-sub-btn" onclick="subBtn3()">
+              add number mapping Task
+            </button>
+            <button class="fourth-button sub-btn" onclick="subBtn4()">Task Listing</button>
+            <div class="confirm-payment-task-popup">
+              <span class="close-btn" onclick="closeconfirmPaymentTask2()">&times;</span>
+              <h1 class="logout-popup-head">Confirm payment for this task</h1>
+              <div class="api-frame confirm-payment-text-div m-32">
+                <div class="api-frame-input">
+                  <label for="">Number of Records</label>
+                  <label for="">1000</label>
+                </div>
+                <div class="api-frame-input m-32">
+                  <label for="">Fee</label>
+                  <label for="">$10.00 USD</label>
+                </div>
+              </div>
+              <div class="logout-popup-btn-container m-32">
+                <a class="cancel-btn" onclick="closeconfirmPaymentTask2()">Back</a>
+                <a class="logout-btn" href="#">Pay Now</a>
+              </div>
+            </div>
+          </div>
+          <div id="sub-tab-3">
+          <!-- number mapping -->
+    <div class="number-mapping">
+      <p class="service-sub-para mp-32">
+        Upload a file with and we will map the file with parameters select
+      </p>
+      <h5 class="file-upload-head">File Upload</h5>
+
+
+      <form class="form-container">
+        <div class="upload-files-container">
+          <div class="drag-file-area">
+            <h3 class="dynamic-message m68-5">Upload number file</h3>
+            <span class="browse-files">
+             
+              <label class="label"><span class="browse-files"> Click to <input type="file" class="default-file-input"/> <span class="browse-files-text">browse</span> <span>or drag & drop</span> </span> </label>
+              </label>
+              
+          </div>
+          
+          <div class="text-center checkbox-container">
+            <label for="Select-field" class="select-field-head">Select fields</label>
+            <div class="checkbox-grid">
+              <div class="checkBox">
+                <input type="checkbox">
+                <label>DNC</label>
+              </div>
+              <div class="checkBox">
+                <input type="checkbox">
+                <label>State</label>
+              </div>
+              <div class="checkBox">
+                <input type="checkbox">
+                <label>LATA</label>
+              </div>
+              <div class="checkBox">
+                <input type="checkbox">
+                <label>Operating Company</label>
+              </div>
+              <div class="checkBox">
+                <input type="checkbox">
+                <label>Rate Center</label>
+              </div>
+              <div class="checkBox">
+                <input type="checkbox">
+                <label>Operator Type</label>
+              </div>
+              <div class="checkBox">
+                <input type="checkbox">
+                <label>FTC Database</label>
+              </div>
+              <div class="checkBox">
+                <input type="checkbox">
+                <label>LNR</label>
+              </div>
+
+            </div>
+            <div>
+
+            </div>
+            <button type="button" class="upload-button">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div id="sub-tab-4">sub tab 2</div>
+        </section>
+        <!-- end of number mapping -->
 
         <section class="content-2 data-subscription-section">
           <div class="data-sub-table-container">

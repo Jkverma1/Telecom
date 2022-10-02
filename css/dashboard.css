@@ -182,6 +182,10 @@ section.active {
   padding-top: 68.5px;
 }
 
+.mp-32 {
+  padding-top: 32px;
+}
+
 .sub-btn {
   font-family: "IBM Plex Mono";
   font-style: normal;
@@ -206,7 +210,8 @@ section.active {
   border-bottom: 2px solid #008f7d;
 }
 
-#sub-tab-2 {
+#sub-tab-2,
+#sub-tab-4 {
   display: none;
 }
 @media screen and (max-width: 1170px) {
