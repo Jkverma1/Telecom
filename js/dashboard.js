@@ -38,3 +38,13 @@ function closeextendDate() {
   document.querySelector(".extend-date-popup").style.display = "none";
   document.querySelector(".background-overlay-popup").style.display = "none";
 }
+
+function renewPrice() {
+  document.querySelector(".renew-price-popup").style.display = "unset";
+  document.querySelector(".background-overlay-popup").style.display = "unset";
+}
+
+function closeRenewPrice() {
+  document.querySelector(".renew-price-popup").style.display = "none";
+  document.querySelector(".background-overlay-popup").style.display = "none";
+}

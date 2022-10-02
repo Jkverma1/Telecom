@@ -124,6 +124,11 @@ section.active {
   margin: 0;
 }
 
+.content-1,
+.content-2 {
+  margin-top: 50px;
+}
+
 .table-head {
   /* H4 | Subtitle 2 */
 
@@ -243,7 +248,8 @@ section.active {
 
 .logout-popup,
 .buy-api-popup,
-.extend-date-popup {
+.extend-date-popup,
+.renew-price-popup {
   display: none;
   position: fixed;
   top: 80px;
