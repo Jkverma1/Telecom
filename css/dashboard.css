@@ -112,11 +112,11 @@ a.active svg {
   width: 100%;
 }
 
-div[class*="content-"] {
+section[class*="content-"] {
   display: none;
 }
 
-div.active {
+section.active {
   display: block;
 }
 .main-table {
@@ -143,12 +143,19 @@ div.active {
   text-align: left;
 }
 
+.number-mapping {
+  padding-bottom: 0;
+}
+
 .margin-143 {
   margin-top: 143px;
 }
 @media screen and (max-width: 1141px) {
   .button-wrap {
     justify-content: unset;
+  }
+  .number-mapping {
+    padding-bottom: 0;
   }
 }
 
@@ -176,6 +183,9 @@ div.active {
   }
   .extended-dropdown {
     display: none;
+  }
+  .number-mapping {
+    padding-bottom: 0;
   }
 
   .dropdown-div {
@@ -224,3 +234,10 @@ div.active {
     font-size: 20px;
   }
 }
+
+.login-btn {
+  cursor: pointer;
+}
+
+/* popup btn */
+

@@ -10,10 +10,5 @@ function showDropdown() {
     openDropdown.style.display = "unset";
   }
 
-  // if (openDropdown.classList.contains("show-dropdown")) {
-  //     openDropdown.classList.remove("show-dropdown");
-  //   }
-  // else{
-  //     openDropdown.classList.add("show-dropdown");
-  // }
-}
+// popup btn
+

@@ -1,0 +1,86 @@
+<h1 class="table-head">You are not yet subscribed to any data</h1>
+          <table class="main-table">
+            <thead>
+              <tr>
+                <th class="w-50">Data Type</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>LRN</td>
+                <td class="subscribe-btn-td">
+                  <button class="subscribe-btn">subscribe</button>
+                </td>
+              </tr>
+              <tr>
+                <td>DNC</td>
+                <td class="subscribe-btn-td">
+                  <button class="subscribe-btn">subscribe</button>
+                </td>
+              </tr>
+              <tr>
+                <td>LERG</td>
+                <td class="subscribe-btn-td">
+                  <button class="subscribe-btn">subscribe</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h1 class="table-head">Number Monitoring Quota</h1>
+          <table class="main-table">
+            <thead>
+              <tr class="th-container">
+                <th>Quota</th>
+                <th>Used</th>
+                <th>Expiry Date</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>0</td>
+                <td></td>
+                <td></td>
+                <td class="subscribe-btn-td">
+                  <button class="subscribe-btn extended-btn">Extend</button>
+                  <button class="subscribe-btn extended-btn">Add Quota</button>
+                  <ul class="extended-btn-td" onclick="showDropdown()">
+                    <div class="dropdown-div">
+                      <li>Extend</li>
+                      <li>Add Quota</li>
+                    </div>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h1 class="table-head">
+            Data API Credit
+            <button class="app-usage-btn">API usage history</button>
+          </h1>
+          <table class="main-table">
+            <thead>
+              <tr class="th-container2">
+                <th>Total Credit Purchased</th>
+                <th>Used</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>0</td>
+                <td></td>
+                <td class="subscribe-btn-td">
+                  <button class="subscribe-btn extended-btn">
+                    Purchase More
+                  </button>
+                  <ul class="extended-btn-td" onclick="showDropdown()">
+                    <div class="dropdown-div">
+                      <li>Purchase More</li>
+                    </div>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>

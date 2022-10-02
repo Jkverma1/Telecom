@@ -48,7 +48,7 @@
             <li><a href="#">API</a></li>
             <li><a href="#">Contact</a></li>
             <li id="login-container">
-              <a class="login-btn topfix" id="login-btn" href="signin.html"
+              <a class="login-btn topfix" id="login-btn"
                 >Log Out</a
               >
             </li>
@@ -64,6 +64,7 @@
 
     <section class="toogle-menu">
       <div class="button-wrap">
+        <!-- button 1 -->
         <a href="#" class="button">
           <svg
             width="15"
@@ -79,6 +80,7 @@
           </svg>
           Dashboard
         </a>
+        <!-- button 2 -->
         <a href="#" class="button">
           <svg
             width="14"
@@ -94,6 +96,8 @@
           </svg>
           Number Monitoring
         </a>
+
+        <!-- button 3 -->
         <a href="#" class="button">
           <svg
             width="12"
@@ -109,6 +113,8 @@
           </svg>
           Number Scrubbing
         </a>
+
+        <!-- button 4 -->
         <a href="#" class="button">
           <svg
             width="15"
@@ -124,6 +130,8 @@
           </svg>
           Number Mapping
         </a>
+
+        <!-- button 5 -->
         <a href="#" class="button">
           <svg
             width="16"
@@ -142,7 +150,7 @@
       </div>
 
       <div class="content">
-        <div class="content-1 active">
+        <section class="content-1 active">
           <h1 class="table-head">You are not yet subscribed to any data</h1>
           <table class="main-table">
             <thead>
@@ -229,11 +237,94 @@
               </tr>
             </tbody>
           </table>
+        </section>
+        <section class="content-2">Button 2 Content</section>
+        <section class="content-2">
+          <!-- number scrubbing -->
+    <div class="number-mapping">
+      <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16.5 14V4C16.5 1.832 12.837 0 8.5 0C4.163 0 0.5 1.832 0.5 4V14C0.5 16.168 4.163 18 8.5 18C12.837 18 16.5 16.168 16.5 14ZM8.5 2C12.191 2 14.431 3.507 14.5 3.994C14.431 4.493 12.191 6 8.5 6C4.809 6 2.569 4.493 2.5 4.006C2.569 3.507 4.809 2 8.5 2ZM2.5 6.607C3.979 7.454 6.137 8 8.5 8C10.863 8 13.021 7.454 14.5 6.607V8.994C14.431 9.493 12.191 11 8.5 11C4.809 11 2.569 9.493 2.5 9V6.607ZM2.5 14V11.607C3.979 12.454 6.137 13 8.5 13C10.863 13 13.021 12.454 14.5 11.607V13.994C14.431 14.493 12.191 16 8.5 16C4.809 16 2.569 14.493 2.5 14Z" fill="#008F7D"/>
+        </svg>
+        
+      <h1 class="Service-head">Number Scrubbing</h1>
+      <h5 class="sub-head">Trial version</h5>
+      <p class="service-sub-para">
+        Upload a file with less than 100 numbers and we will map the file with parameters select for free
+      </p>
+      <h5 class="file-upload-head">File Upload</h5>
+
+      <form class="form-container">
+        <div class="upload-files-container">
+          <div class="drag-file-area">
+            <h3 class="dynamic-message">Upload number file</h3>
+            <span class="browse-files">
+             
+              <label class="label"><span class="browse-files"> Click to <input type="file" class="default-file-input"/> <span class="browse-files-text">browse</span> <span>or drag & drop</span> </span> </label>
+              </label>
+              
+          </div>
+          
+          <div class="text-center checkbox-container">
+            <label for="Select-field" class="select-field-head">Inclusion Criteria</label>
+              <div class="include-exclude">
+                
+              </div>
+            </div>
+            <div class="checkbox-grid2">
+              <div class="checkBox">
+                <input type="checkbox">
+                <label>Excluse SPAM Number in Youmail</label>
+              </div>
+              <div class="checkBox">
+                <input type="checkbox">
+                <label>Excluse Numbers in DNC</label>
+              </div>
+              <div class="checkBox">
+                <input type="checkbox">
+                <label>Exclude Mobile Number</label>
+              </div>
+              <div class="checkBox">
+                <input type="checkbox">
+                <label>Excluse Fraud Number in Youmail</label>
+              </div>
+              <div class="checkBox">
+                <input type="checkbox">
+                <label>Excluse Numbers in FTC</label>
+              </div>
+              <div class="checkBox">
+                <input type="checkbox">
+                <label>Exclude Landline Number</label>
+              </div>
+              <div class="checkBox">
+                <input type="checkbox">
+                <label>Exclude Canada Number</label>
+              </div>
+              <div class="checkBox">
+                <input type="checkbox">
+                <label>Exclude Non-US Number</label>
+              </div>
+            </div>
+            <div class="row-6-6">
+              <div>
+                <h2 class="tags-add-label">Include Operators</h2>
+  <input type="text" id="tag-input1">
+              </div>
+              <div>
+                <h2 class="tags-add-label">Exclude Operators</h2>
+  <input type="text" id="tag-input2">
+              </div>
+            </div>
+            <div>
+
+            </div>
+            <button type="button" class="upload-button">Submit</button>
+          </div>
         </div>
-        <div class="content-1"></div>
-        <div class="content-2">Button 3 Content</div>
-        <div class="content-2">Button 4 Content</div>
-        <div class="content-2">Button 4 Content</div>
+      </form>
+    </section>
+        </section>
+        <section class="content-2">Button 4 Content</section>
+        <section class="content-2">Button 5 Content</section>
       </div>
     </section>
 
@@ -340,7 +431,7 @@
           (position = $siblings.index($this));
         console.log(position);
 
-        $(".content div").removeClass("active").eq(position).addClass("active");
+        $(".content section").removeClass("active").eq(position).addClass("active");
 
         $siblings.removeClass("active");
         $this.addClass("active");
