@@ -677,7 +677,8 @@ section.active {
   color: #011312;
 }
 
-.data-subscription-table {
+.data-subscription-table,
+.number-monitoring-table {
   width: 1136px;
   border-collapse: collapse;
   margin: 72px auto 327px;
@@ -794,7 +795,7 @@ and also iPads specifically.
 
 @media screen and (max-width: 1149px) {
   .data-sub-table-container {
-    overflow-x: scroll;
+    overflow-x: auto;
   }
   .data-subscription-table {
     width: 690px;
@@ -813,3 +814,4 @@ and also iPads specifically.
     width: 172.5px;
   }
 }
+

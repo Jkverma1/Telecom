@@ -33,6 +33,8 @@
     <link rel="stylesheet" href="fonts/fontawesome-free/css/all.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/number-monitoring.css" />
+
   </head>
   <body>
     <div class="background-overlay-popup">
@@ -361,7 +363,610 @@
             </tbody>
           </table>
         </section>
-        <section class="content-2">Button 2 Content</section>
+
+        <!-- number monitoring -->
+        <section class="content-2">
+
+<!-- number-monitoring -->
+<div class="number-monitoring">
+  <!-- top menu -->
+  <div class="monitoring-main-top-menu">
+    <div class="monitoring-top-btn-container">
+      <button class="top-menu-btn">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7.33301 10.6668H8.66634V4.66683H10.6663L7.99967 1.3335L5.33301 4.66683H7.33301V10.6668Z"
+            fill="#3E4B4B"
+          />
+          <path
+            d="M3.33333 14.6667H12.6667C13.402 14.6667 14 14.0687 14 13.3333V7.33333C14 6.598 13.402 6 12.6667 6H10V7.33333H12.6667V13.3333H3.33333V7.33333H6V6H3.33333C2.598 6 2 6.598 2 7.33333V13.3333C2 14.0687 2.598 14.6667 3.33333 14.6667Z"
+            fill="#3E4B4B"
+          />
+        </svg>
+        Upload Numbers
+      </button>
+      <button class="top-menu-btn">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7.33301 10.6668H8.66634V4.66683H10.6663L7.99967 1.3335L5.33301 4.66683H7.33301V10.6668Z"
+            fill="#3E4B4B"
+          />
+          <path
+            d="M3.33333 14.6667H12.6667C13.402 14.6667 14 14.0687 14 13.3333V7.33333C14 6.598 13.402 6 12.6667 6H10V7.33333H12.6667V13.3333H3.33333V7.33333H6V6H3.33333C2.598 6 2 6.598 2 7.33333V13.3333C2 14.0687 2.598 14.6667 3.33333 14.6667Z"
+            fill="#3E4B4B"
+          />
+        </svg>
+        Add manually
+      </button>
+    </div>
+    <div class="filter-menu-container">
+      <div class="filter-container">
+        <form action="/action_page.php">
+          <label class="filter-label" for="filter-by">Filter by</label>
+          <select
+            class="choose-filter"
+            type="text"
+            name="filter-by"
+            placeholder="Choose Filter"
+          >
+            <option
+              class="default-option"
+              value="none"
+              selected
+              disabled
+              hidden
+            >
+              -Choose Filter-
+            </option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">3</option>
+          </select>
+        </form>
+      </div>
+      <div class="quota-top-menu">
+        <h3 class="quota-head">
+          <span class="quota-title">Quota left:</span>
+          320/10000
+        </h3>
+        <input
+          class="Add-Quota top-menu-btn"
+          type="submit"
+          value="Add Quota"
+        />
+      </div>
+    </div>
+  </div>
+  <!-- end of top menu -->
+  <div class="rolling-table">
+    <table class="number-monitoring-table">
+      <thead>
+        <tr>
+          <th>Number</th>
+          <th>Label</th>
+          <th>Most Recent Spam Score</th>
+          <th>Historical Spam Score</th>
+          <th>Max: Spam Score</th>
+          <th>Region</th>
+          <th>Locale</th>
+          <th>FTC Complaints</th>
+          <th>App Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-column="Data type">(704) 555-0127</td>
+          <td data-column="Frequency">July 21 Test</td>
+          <td class="span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+          <td>0</td>
+          <td class="span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+          <td>IN</td>
+          <td>New Washington</td>
+          <td>0</td>
+          <td>
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+        </tr>
+        <tr>
+          <td data-column="Data type">(704) 555-0127</td>
+          <td data-column="Frequency">July 21 Test</td>
+          <td class="span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+          <td>0</td>
+          <td class="span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+          <td>IN</td>
+          <td>New Washington</td>
+          <td>0</td>
+          <td>
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+        </tr>
+        <tr>
+          <td data-column="Data type">(704) 555-0127</td>
+          <td data-column="Frequency">July 21 Test</td>
+          <td class="high-span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#DB3E3E" />
+            </svg>
+            High
+          </td>
+          <td>0</td>
+          <td class="high-span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#DB3E3E" />
+            </svg>
+            High
+          </td>
+          <td>IN</td>
+          <td>New Washington</td>
+          <td>0</td>
+          <td class="high-span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#DB3E3E" />
+            </svg>
+            Flagged
+          </td>
+        </tr>
+        <tr>
+          <td data-column="Data type">(704) 555-0127</td>
+          <td data-column="Frequency">July 21 Test</td>
+          <td class="span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+          <td>0</td>
+          <td class="span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+          <td>IN</td>
+          <td>New Washington</td>
+          <td>0</td>
+          <td>
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+        </tr>
+        <tr>
+          <td data-column="Data type">(704) 555-0127</td>
+          <td data-column="Frequency">July 21 Test</td>
+          <td class="span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+          <td>0</td>
+          <td class="span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+          <td>IN</td>
+          <td>New Washington</td>
+          <td>0</td>
+          <td>
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+        </tr>
+        <tr>
+          <td data-column="Data type">(704) 555-0127</td>
+          <td data-column="Frequency">July 21 Test</td>
+          <td class="medium-span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#F2994A" />
+            </svg>
+            Medium
+          </td>
+          <td>0</td>
+          <td class="high-span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#DB3E3E" />
+            </svg>
+            High
+          </td>
+          <td>IN</td>
+          <td>New Washington</td>
+          <td>0</td>
+          <td class="high-span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#DB3E3E" />
+            </svg>
+            Flagged
+          </td>
+        </tr>
+        <tr>
+          <td data-column="Data type">(704) 555-0127</td>
+          <td data-column="Frequency">July 21 Test</td>
+          <td class="span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+          <td>0</td>
+          <td class="span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+          <td>IN</td>
+          <td>New Washington</td>
+          <td>0</td>
+          <td>
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+        </tr>
+        <tr>
+          <td data-column="Data type">(704) 555-0127</td>
+          <td data-column="Frequency">July 21 Test</td>
+          <td class="span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+          <td>0</td>
+          <td class="span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+          <td>IN</td>
+          <td>New Washington</td>
+          <td>0</td>
+          <td>
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+        </tr>
+        <tr>
+          <td data-column="Data type">(704) 555-0127</td>
+          <td data-column="Frequency">July 21 Test</td>
+          <td class="span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+          <td>0</td>
+          <td class="span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+          <td>IN</td>
+          <td>New Washington</td>
+          <td>0</td>
+          <td>
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+        </tr>
+        <tr>
+          <td data-column="Data type">(704) 555-0127</td>
+          <td data-column="Frequency">July 21 Test</td>
+          <td class="span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+          <td>0</td>
+          <td class="span-score" data-column="Monthly Fee">
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+          <td>IN</td>
+          <td>New Washington</td>
+          <td>0</td>
+          <td>
+            <svg
+              class="dot-padding"
+              width="7"
+              height="8"
+              viewBox="0 0 7 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+            </svg>
+            Clean
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- show btn -->
+  <div class="show-container">
+    <div class="show-details">
+      <form action="#">
+        <label class="show-label" for="show">Show</label>
+        <select class="show-select-btn" name="show" id="cars">
+          <option value="10">10</option>
+          <option value="50">50</option>
+          <option value="100">100</option>
+          <option value="200">200</option>
+        </select>
+      </form>
+      <span class="page-index">1-10 of 40</span>
+    </div>
+    <div>
+      <i class="fa-solid fa-chevron-left show-list-left"></i>
+      <h3 class="page-number active-page-number">1</h3>
+      <h3 class="page-number">2</h3>
+      <h3 class="page-number">3</h3>
+      <h3 class="page-number">4</h3>
+      <i class="fa-solid fa-chevron-right show-list-right"></i>
+    </div>
+  </div>
+</div>
+<!-- end of number monitoring -->
+        </section>
+        <!-- end of number monitoring -->
         <section class="content-2">
           <div class="sub-btn-container">
             <button class="first-button sub-btn active-sub-btn" onclick="subBtn1()">
