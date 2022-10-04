@@ -409,6 +409,51 @@ section.active {
   background-color: rgba(0, 68, 59, 0.2);
 }
 
+.m-68 {
+  padding-top: 68px;
+}
+
+/* add manual */
+
+.add-manual-content {
+  display: none;
+  padding: 0 39px;
+}
+
+.top-menu-btn:hover,
+.active-monitoring-btn {
+  background: #3e4b4b;
+  color: #fff;
+}
+
+.add-manual-label {
+  display: block;
+  text-align: left;
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 17px;
+
+  /* Text 1 */
+
+  color: #011312;
+}
+
+.add-manual-textarea {
+  display: block;
+  margin-top: 8px;
+  height: 335px;
+  padding: 16px;
+  width: 100%;
+  max-width: 1170px;
+  border: 1px solid #e7e7e7;
+}
+
+.monitoring-upload-plus {
+  margin-right: 10.22px;
+}
+
 .Number-detail-background-overlay-popup {
   display: none;
   position: absolute;
@@ -800,6 +845,9 @@ td {
 
 .content {
   max-width: 100%;
+}
+.p-32 {
+  padding: 16 32px;
 }
 
 /* 

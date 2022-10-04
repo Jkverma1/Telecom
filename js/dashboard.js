@@ -59,11 +59,33 @@ function closeconfirmPaymentTask() {
 
 function numberMonitoringPopup() {
   document.querySelector(".Number-detail-popup").style.display = "unset";
-  document.querySelector(".Number-detail-background-overlay-popup").style.display = "unset";
+  document.querySelector(
+    ".Number-detail-background-overlay-popup"
+  ).style.display = "unset";
 }
 function closenumberMonitoringPopup() {
   document.querySelector(".Number-detail-popup").style.display = "none";
-  document.querySelector(".Number-detail-background-overlay-popup").style.display = "none";
+  document.querySelector(
+    ".Number-detail-background-overlay-popup"
+  ).style.display = "none";
+}
+
+function monitoringUploadBtn() {
+  document.querySelector(".m-s-21").style.marginTop = "21px";
+  document.querySelector(".back-to-listing").style.display = "unset";
+  document.querySelector(".monitoring-upload-content").style.display = "unset";
+  document.querySelector(".rolling-table").style.display = "none";
+  document.querySelector(".filter-menu-container").style.visibility = "hidden";
+  document.querySelector(".show-container").style.display = "none";
+}
+
+function MonitoringAddManual() {
+  document.querySelector(".m-s-21").style.marginTop = "21px";
+  document.querySelector(".back-to-listing").style.display = "unset";
+  document.querySelector(".add-manual-content").style.display = "unset";
+  document.querySelector(".number-monitoring-table").style.display = "none";
+  document.querySelector(".filter-menu-container").style.visibility = "hidden";
+  document.querySelector(".show-container").style.display = "none";
 }
 
 function subBtn1() {

@@ -1,7 +1,3 @@
-.number-monitoring {
-  padding-top: 56.5px;
-}
-
 .number-monitoring-table {
   margin: 0;
 }
@@ -293,9 +289,30 @@
   /* Default elements */
   color: #3e4b4b;
 }
+.monitoring-upload-content {
+  display: none;
+}
 
 .quota-title {
   color: #a0a7a7;
+}
+.m-s-21 {
+  margin-top: 0px;
+}
+.back-to-listing {
+  display: none;
+  text-decoration: none;
+  /* Button text */
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height, or 138% */
+
+  /* text 2 */
+
+  color: #3e4b4b;
 }
 
 @media screen and (max-width: 1170px) {

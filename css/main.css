@@ -800,7 +800,8 @@ body {
   accent-color: #008f7d;
 }
 
-.upload-button {
+.upload-button,
+.upload-no-button {
   margin-top: 60px;
   background: #008f7d;
   font-family: "IBM Plex Mono";
@@ -816,6 +817,13 @@ body {
 
   color: #ffffff;
   cursor: pointer;
+}
+.top-menu-btn:hover .upload-btn-icon {
+  fill: #fff;
+}
+
+.upload-no-button {
+  padding: 16px 32px;
 }
 
 .row-6-6 {

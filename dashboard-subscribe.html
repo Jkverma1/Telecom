@@ -422,10 +422,14 @@
 
 <!-- number-monitoring -->
 <div class="number-monitoring">
+  <a class="back-to-listing" href="dashboard-subscribe.html">
+    <i class="fa-solid fa-chevron-left back-to-dashboard"></i>
+    Back to Listing
+  </a>
   <!-- top menu -->
-  <div class="monitoring-main-top-menu">
+  <div class="monitoring-main-top-menu m-s-21">
     <div class="monitoring-top-btn-container">
-      <button class="top-menu-btn">
+      <button class="top-menu-btn" onclick="monitoringUploadBtn()">
         <svg
           width="16"
           height="16"
@@ -434,33 +438,20 @@
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
+            class="upload-btn-icon"
             d="M7.33301 10.6668H8.66634V4.66683H10.6663L7.99967 1.3335L5.33301 4.66683H7.33301V10.6668Z"
             fill="#3E4B4B"
           />
           <path
+          class="upload-btn-icon"
             d="M3.33333 14.6667H12.6667C13.402 14.6667 14 14.0687 14 13.3333V7.33333C14 6.598 13.402 6 12.6667 6H10V7.33333H12.6667V13.3333H3.33333V7.33333H6V6H3.33333C2.598 6 2 6.598 2 7.33333V13.3333C2 14.0687 2.598 14.6667 3.33333 14.6667Z"
             fill="#3E4B4B"
           />
         </svg>
         Upload Numbers
       </button>
-      <button class="top-menu-btn">
-        <svg
-          width="16"
-          height="16"
-          viewBox="0 0 16 16"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M7.33301 10.6668H8.66634V4.66683H10.6663L7.99967 1.3335L5.33301 4.66683H7.33301V10.6668Z"
-            fill="#3E4B4B"
-          />
-          <path
-            d="M3.33333 14.6667H12.6667C13.402 14.6667 14 14.0687 14 13.3333V7.33333C14 6.598 13.402 6 12.6667 6H10V7.33333H12.6667V13.3333H3.33333V7.33333H6V6H3.33333C2.598 6 2 6.598 2 7.33333V13.3333C2 14.0687 2.598 14.6667 3.33333 14.6667Z"
-            fill="#3E4B4B"
-          />
-        </svg>
+      <button class="top-menu-btn" onclick="MonitoringAddManual()">
+        <i class="fa fa-plus" aria-hidden="true"></i>
         Add manually
       </button>
     </div>
@@ -504,6 +495,34 @@
     </div>
   </div>
   <!-- end of top menu -->
+  <div class="monitoring-upload-content text-center">
+    <form class="form-container">
+      <div class="upload-files-container">
+        <div class="drag-file-area m-68">
+          <h3 class="dynamic-message">Upload number file</h3>
+          <span class="browse-files">
+            <label class="label"><span class="browse-files"> Click to <input type="file" class="default-file-input"/> <span class="browse-files-text">browse</span> <span>or drag & drop</span> </span> </label>
+        </div>
+          <button type="button" class="upload-button">
+            <svg class="monitoring-upload-plus" width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.3331 6.05599H6.44419V1.1671C6.44419 1.04923 6.39737 0.936181 6.31402 0.852831C6.23067 0.769482 6.11762 0.722656 5.99975 0.722656C5.88187 0.722656 5.76883 0.769482 5.68548 0.852831C5.60213 0.936181 5.5553 1.04923 5.5553 1.1671V6.05599H0.666415C0.548541 6.05599 0.435495 6.10281 0.352146 6.18616C0.268796 6.26951 0.221971 6.38256 0.221971 6.50043C0.219778 6.5582 0.229992 6.61576 0.251924 6.66924C0.273857 6.72272 0.306999 6.77088 0.349116 6.81047C0.391234 6.85006 0.441348 6.88016 0.496082 6.89875C0.550817 6.91733 0.608899 6.92397 0.666415 6.91821H5.5553V11.8338C5.5553 11.9516 5.60213 12.0647 5.68548 12.148C5.76883 12.2314 5.88187 12.2782 5.99975 12.2782C6.11762 12.2782 6.23067 12.2314 6.31402 12.148C6.39737 12.0647 6.44419 11.9516 6.44419 11.8338V6.94488H11.3331C11.451 6.94488 11.564 6.89805 11.6474 6.8147C11.7307 6.73135 11.7775 6.61831 11.7775 6.50043C11.7775 6.38256 11.7307 6.26951 11.6474 6.18616C11.564 6.10281 11.451 6.05599 11.3331 6.05599Z" fill="#E7E7E7"/>
+              </svg>              
+            Add uploaded numbers
+          </button>
+      </div>
+  </form>
+  </div>
+  <!-- end of upload content -->
+  <div class="add-manual-content">
+    <label class="add-manual-label" for="add-manual-list-of-number">Add list of numbers</label>
+    <textarea name="add-manual-list-of-number" class="add-manual-textarea" cols="130" rows="10" placeholder="| (704) 555-0127, (607) 500-0845, ..."></textarea>
+    <button type="button" class="upload-button m-l-39">
+      <svg class="monitoring-upload-plus" width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11.3331 6.05599H6.44419V1.1671C6.44419 1.04923 6.39737 0.936181 6.31402 0.852831C6.23067 0.769482 6.11762 0.722656 5.99975 0.722656C5.88187 0.722656 5.76883 0.769482 5.68548 0.852831C5.60213 0.936181 5.5553 1.04923 5.5553 1.1671V6.05599H0.666415C0.548541 6.05599 0.435495 6.10281 0.352146 6.18616C0.268796 6.26951 0.221971 6.38256 0.221971 6.50043C0.219778 6.5582 0.229992 6.61576 0.251924 6.66924C0.273857 6.72272 0.306999 6.77088 0.349116 6.81047C0.391234 6.85006 0.441348 6.88016 0.496082 6.89875C0.550817 6.91733 0.608899 6.92397 0.666415 6.91821H5.5553V11.8338C5.5553 11.9516 5.60213 12.0647 5.68548 12.148C5.76883 12.2314 5.88187 12.2782 5.99975 12.2782C6.11762 12.2782 6.23067 12.2314 6.31402 12.148C6.39737 12.0647 6.44419 11.9516 6.44419 11.8338V6.94488H11.3331C11.451 6.94488 11.564 6.89805 11.6474 6.8147C11.7307 6.73135 11.7775 6.61831 11.7775 6.50043C11.7775 6.38256 11.7307 6.26951 11.6474 6.18616C11.564 6.10281 11.451 6.05599 11.3331 6.05599Z" fill="#E7E7E7"/>
+        </svg>              
+      Add uploaded numbers
+    </button>
+  </div>
   <div class="rolling-table">
     <table class="number-monitoring-table">
       <thead>
