@@ -57,6 +57,15 @@ function closeconfirmPaymentTask() {
   document.querySelector(".confirm-payment-task-popup").style.display = "none";
 }
 
+function numberMonitoringPopup() {
+  document.querySelector(".Number-detail-popup").style.display = "unset";
+  document.querySelector(".Number-detail-background-overlay-popup").style.display = "unset";
+}
+function closenumberMonitoringPopup() {
+  document.querySelector(".Number-detail-popup").style.display = "none";
+  document.querySelector(".Number-detail-background-overlay-popup").style.display = "none";
+}
+
 function subBtn1() {
   let subBtn1 = document.querySelector(".first-button");
   let subBtn2 = document.querySelector(".second-button");

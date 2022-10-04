@@ -37,6 +37,58 @@
 
   </head>
   <body>
+    <div class="Number-detail-background-overlay-popup">
+      <div class="Number-detail-popup">
+        <span class="close-btn" onclick="closenumberMonitoringPopup()">&times;</span>
+        <h1 class="logout-popup-head">Number Details</h1>
+        <h3 class="number-detail-sub-head-popup">(704) 555-0127</h3>
+        <div class="api-frame confirm-payment-text-div m-32">
+          <div class="api-frame-input">
+            <label for="">LRN</label>
+            <label for="">189485 66 0822</label>
+          </div>
+          <div class="api-frame-input m-32">
+            <label for="">Spam Score</label>
+            <label for="">4567</label>
+          </div>
+          <div class="api-frame-input m-32">
+            <label for="">Fraud Score</label>
+            <label for="">19</label>
+          </div>
+          <div class="api-frame-input m-32">
+            <label for="">LATA</label>
+            <label for="">10</label>
+          </div>
+          <div class="api-frame-input m-32">
+            <label for="">Rate Center</label>
+            <label for="">Center Name</label>
+          </div>
+          <div class="api-frame-input m-32">
+            <label for="">State</label>
+            <label for="">California</label>
+          </div>
+          <div class="api-frame-input m-32">
+            <label for="">Operator Name</label>
+            <label for="">Virgin Mobile</label>
+          </div>
+          <div class="api-frame-input m-32">
+            <label for="">Operator Type</label>
+            <label for="">-</label>
+          </div>
+          <div class="api-frame-input m-32">
+            <label for="">Last Seen in FTC</label>
+            <label for="">September 2022</label>
+          </div>
+          <div class="api-frame-input m-32">
+            <label for="">In DNC</label>
+            <label for="">California</label>
+          </div>
+        </div>
+        <div class="logout-popup-btn-container m-32">
+          <a class="cancel-btn" onclick="closenumberMonitoringPopup()">Close</a>
+        </div>
+      </div>
+    </div>
     <div class="background-overlay-popup">
       <div class="buy-api-popup">
         <span class="close-btn" onclick="closeApipopup()">&times;</span>
@@ -367,6 +419,7 @@
         <!-- number monitoring -->
         <section class="content-2">
 
+
 <!-- number-monitoring -->
 <div class="number-monitoring">
   <!-- top menu -->
@@ -467,7 +520,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
+        <tr onclick="numberMonitoringPopup()">
           <td data-column="Data type">(704) 555-0127</td>
           <td data-column="Frequency">July 21 Test</td>
           <td class="span-score" data-column="Monthly Fee">
@@ -514,7 +567,7 @@
             Clean
           </td>
         </tr>
-        <tr>
+        <tr onclick="numberMonitoringPopup()">
           <td data-column="Data type">(704) 555-0127</td>
           <td data-column="Frequency">July 21 Test</td>
           <td class="span-score" data-column="Monthly Fee">
@@ -561,7 +614,7 @@
             Clean
           </td>
         </tr>
-        <tr>
+        <tr onclick="numberMonitoringPopup()">
           <td data-column="Data type">(704) 555-0127</td>
           <td data-column="Frequency">July 21 Test</td>
           <td class="high-span-score" data-column="Monthly Fee">
@@ -608,7 +661,7 @@
             Flagged
           </td>
         </tr>
-        <tr>
+        <tr onclick="numberMonitoringPopup()">
           <td data-column="Data type">(704) 555-0127</td>
           <td data-column="Frequency">July 21 Test</td>
           <td class="span-score" data-column="Monthly Fee">
@@ -655,7 +708,7 @@
             Clean
           </td>
         </tr>
-        <tr>
+        <tr onclick="numberMonitoringPopup()">
           <td data-column="Data type">(704) 555-0127</td>
           <td data-column="Frequency">July 21 Test</td>
           <td class="span-score" data-column="Monthly Fee">
@@ -702,7 +755,7 @@
             Clean
           </td>
         </tr>
-        <tr>
+        <tr onclick="numberMonitoringPopup()">
           <td data-column="Data type">(704) 555-0127</td>
           <td data-column="Frequency">July 21 Test</td>
           <td class="medium-span-score" data-column="Monthly Fee">
@@ -749,7 +802,7 @@
             Flagged
           </td>
         </tr>
-        <tr>
+        <tr onclick="numberMonitoringPopup()">
           <td data-column="Data type">(704) 555-0127</td>
           <td data-column="Frequency">July 21 Test</td>
           <td class="span-score" data-column="Monthly Fee">
@@ -796,7 +849,7 @@
             Clean
           </td>
         </tr>
-        <tr>
+        <tr onclick="numberMonitoringPopup()">
           <td data-column="Data type">(704) 555-0127</td>
           <td data-column="Frequency">July 21 Test</td>
           <td class="span-score" data-column="Monthly Fee">
@@ -843,7 +896,7 @@
             Clean
           </td>
         </tr>
-        <tr>
+        <tr onclick="numberMonitoringPopup()">
           <td data-column="Data type">(704) 555-0127</td>
           <td data-column="Frequency">July 21 Test</td>
           <td class="span-score" data-column="Monthly Fee">
@@ -890,7 +943,7 @@
             Clean
           </td>
         </tr>
-        <tr>
+        <tr onclick="numberMonitoringPopup()">
           <td data-column="Data type">(704) 555-0127</td>
           <td data-column="Frequency">July 21 Test</td>
           <td class="span-score" data-column="Monthly Fee">
