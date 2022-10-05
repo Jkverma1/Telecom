@@ -70,16 +70,17 @@ function closenumberMonitoringPopup() {
   ).style.display = "none";
 }
 
-function numberScrubbingtaskListingPopup(){
-  document.querySelector(".Number-scrubbing-task-listing-popup").style.display = "unset";
+function numberScrubbingtaskListingPopup() {
+  document.querySelector(".Number-scrubbing-task-listing-popup").style.display =
+    "unset";
   document.querySelector(
     ".Number-scrubbing-background-overlay-popup"
   ).style.display = "unset";
-
 }
 
-function closenumberScrubbingtaskListingPopup(){
-  document.querySelector(".Number-scrubbing-task-listing-popup").style.display = "none";
+function closenumberScrubbingtaskListingPopup() {
+  document.querySelector(".Number-scrubbing-task-listing-popup").style.display =
+    "none";
   document.querySelector(
     ".Number-scrubbing-background-overlay-popup"
   ).style.display = "none";
@@ -145,4 +146,18 @@ function subBtn4() {
   document.getElementById("sub-tab-4").style.display = "unset";
   subBtn4.style.color = "#008f7d";
   subBtn4.style.borderBottom = "2px solid #008f7d";
+}
+
+function taskListingResult() {
+  document.querySelector("#add-mapping-task-listing").style.display = "none";
+  document.querySelector("#sub-tab-4").style.display = "none";
+  document.querySelector("#number-mapping-result-container").style.display =
+    "unset";
+}
+
+function taskListingDetail() {
+  document.querySelector("#add-mapping-task-listing").style.display = "none";
+  document.querySelector("#sub-tab-4").style.display = "none";
+  document.querySelector(".number-mapping-detail-container").style.display =
+    "unset";
 }
