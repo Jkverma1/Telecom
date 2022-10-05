@@ -46,7 +46,7 @@ a.sub-button {
   text-transform: capitalize;
   color: #a0a7a7;
 }
-a.button svg,
+a.button svg path,
 a.sub-button {
   fill: #a0a7a7;
 }
@@ -56,7 +56,7 @@ a.active {
   border-bottom: 2px solid #008f7d;
 }
 
-a.active svg {
+a.active svg path {
   fill: #008f7d;
 }
 
@@ -464,6 +464,17 @@ section.active {
   width: 100%;
   background-color: rgba(0, 68, 59, 0.2);
 }
+
+.Number-scrubbing-background-overlay-popup {
+  display: none;
+  position: absolute;
+  overflow: scroll;
+  top: 0;
+  height: 1500px;
+  z-index: 1;
+  width: 100%;
+  background-color: rgba(0, 68, 59, 0.2);
+}
 .Number-detail-background-overlay-popup::-webkit-scrollbar {
   display: none;
 }
@@ -475,7 +486,8 @@ section.active {
 .extend-date-popup,
 .renew-price-popup,
 .confirm-payment-task-popup,
-.Number-detail-popup {
+.Number-detail-popup,
+.Number-scrubbing-task-listing-popup {
   display: none;
   position: absolute;
   top: 80px;

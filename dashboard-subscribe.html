@@ -33,10 +33,108 @@
     <link rel="stylesheet" href="fonts/fontawesome-free/css/all.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/task-listing.css">
     <link rel="stylesheet" href="css/number-monitoring.css" />
 
   </head>
   <body>
+    <div class="Number-scrubbing-background-overlay-popup">
+      <div class="Number-scrubbing-task-listing-popup">
+        <span class="close-btn" onclick="closenumberMonitoringPopup()">&times;</span>
+        <h1 class="logout-popup-head task-popup-head">Task Details</h1>
+        <div class="scrubbing-task-record-detail">
+          <div class="scrubbing-task-record-head-1">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.71484 12C10.8658 12 11.7148 11.151 11.7148 10C11.7148 8.849 10.8658 8 9.71484 8C8.56384 8 7.71484 8.849 7.71484 10C7.71484 11.151 8.56284 12 9.71484 12Z" fill="#A0A7A7"/>
+              <path d="M20 4H4C2.897 4 2 4.841 2 5.875V18.125C2 19.159 2.897 20 4 20H20C21.103 20 22 19.159 22 18.125V5.875C22 4.841 21.103 4 20 4ZM20 18L4 17.989V6L20 6.011V18Z" fill="#A0A7A7"/>
+              <path d="M14 9H18V11H14V9ZM15 13H18V15H15V13ZM13.43 15.536C13.43 14.162 11.754 12.75 9.715 12.75C7.676 12.75 6 14.162 6 15.536V16H13.43V15.536Z" fill="#A0A7A7"/>
+              </svg>
+              <h1>Nevada-List.csv</h1>
+              <button class="detailoption-btn">Details</button>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.862 6.19531L7.99998 9.05731L5.13798 6.19531L4.19531 7.13798L7.99998 10.9426L11.8046 7.13798L10.862 6.19531Z" fill="#3E4B4B"/>
+                </svg>
+                
+          </div>
+          <div class="scrubbing-task-record-head-2">
+            <div class="scrubbing-task-record-sub-head1">
+              Uploaded by:
+              <span class="record-sub-head1-span">John Doe</span>
+            </div>
+            <div class="scrubbing-task-record-sub-head1">
+              Date:
+              <span class="record-sub-head1-span">01/08/22 05:11:24 PM</span>
+            </div>
+            <div class="scrubbing-task-record-sub-head2">
+              Total Records:
+              <span class="record-sub-head2-span">543,695</span>
+            </div>
+          </div>
+        </div>
+        <div class="scrubbing-task-detail-main-frame">
+          <div class="scrubbing-main-frame-bill-box">
+            <div class="scrubbing-bill-box bill-box-container-1">
+              <span class="scrubbing-task-bill-title">Billable Phone Numbers</span>
+              <span class="scrubbing-task-bill-detail">543.692</span>
+            </div>
+            <div class="scrubbing-bill-box bill-box-container-1">
+              <span class="scrubbing-task-bill-title">Malformed Records</span>
+              <span class="scrubbing-task-bill-detail">3</span>
+            </div>
+            <div class="scrubbing-bill-box bill-box-container-1">
+              <span class="scrubbing-task-bill-title">VoIP</span>
+              <span class="scrubbing-task-bill-detail">24,425</span>
+            </div>
+          </div>
+          <div class="scrubbing-main-frame-bill-box">
+            <div class="scrubbing-bill-box bill-box-container-2">
+              <span class="scrubbing-task-bill-title">Clean</span>
+              <span class="scrubbing-task-bill-detail text-green">543.692</span>
+            </div>
+            <div class="scrubbing-bill-box bill-box-container-2">
+              <span class="scrubbing-task-bill-title">Invalid</span>
+              <span class="scrubbing-task-bill-detail">31</span>
+            </div>
+            <div class="scrubbing-bill-box bill-box-container-2">
+              <span class="scrubbing-task-bill-title">Blocked</span>
+              <span class="scrubbing-task-bill-detail">32</span>
+            </div>
+          </div>
+          <div class="scrubbing-main-frame-bill-box">
+            <div class="scrubbing-bill-box bill-box-container-3">
+              <span class="scrubbing-task-bill-title">EBR</span>
+              <span class="scrubbing-task-bill-detail">543.692</span>
+            </div>
+            <div class="scrubbing-bill-box bill-box-container-3">
+              <span class="scrubbing-task-bill-title">Wireless</span>
+              <span class="scrubbing-task-bill-detail">3</span>
+            </div>
+            <div class="scrubbing-bill-box bill-box-container-3">
+              <span class="scrubbing-task-bill-title">Do Not Call</span>
+              <span class="scrubbing-task-bill-detail text-red">365,112</span>
+            </div>
+          </div>
+
+        </div>
+        <!-- end of main frame -->
+        <div class="output-file-container">
+          <div class="output-download-details">
+            <button class="output-download-btn">
+              Download Output File
+            </button>
+            <span class="output-file-size">7.1MB</span>
+          </div>
+          <div class="output-download-history">
+            <span class="output-scrub-date"><span class="output-scrub-date-title">Scrub done:</span> 12/06/2022</span>
+            <span class="output-last-dowload"><span class="output-scrub-date-title">Last download:</span> 02/08/2022 01:40:18 PM</span>
+          </div>
+        </div>
+
+        <div class="logout-popup-btn-container m-32">
+          <a class="cancel-btn" onclick="closenumberMonitoringPopup()">Close</a>
+        </div>
+      </div>
+    </div>
     <div class="Number-detail-background-overlay-popup">
       <div class="Number-detail-popup">
         <span class="close-btn" onclick="closenumberMonitoringPopup()">&times;</span>
@@ -1142,7 +1240,250 @@
   </form>   
   <!-- end of number scrubbing -->
           </div>
-          <div id="sub-tab-2">sub tab 2</div>
+          <div id="sub-tab-2">
+            <div class="rolling-table box-shadow-task-listing">
+              <table class="number-monitoring-table number-scrubing-task-listing">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Upload File</th>
+                    <th>Count</th>
+                    <th>Started</th>
+                    <th>Finished On</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr onclick="numberScrubbingtaskListingPopup()">
+                    <td>01/08/22</td>
+                    <td>File Name</td>
+                    <td>32</td>
+                    <td>01/08/22</td>
+                    <td>01/08/22</td>
+                    <td class="span-score" data-column="Monthly Fee">
+                      <svg
+                        class="dot-padding"
+                        width="7"
+                        height="8"
+                        viewBox="0 0 7 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+                      </svg>
+                      Done
+                    </td>
+                  </tr>
+                  <tr onclick="numberScrubbingtaskListingPopup()">
+                    <td>01/08/22</td>
+                    <td>File Name</td>
+                    <td>32</td>
+                    <td>01/08/22</td>
+                    <td>01/08/22</td>
+                    <td class="span-score" data-column="Monthly Fee">
+                      <svg
+                        class="dot-padding"
+                        width="7"
+                        height="8"
+                        viewBox="0 0 7 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+                      </svg>
+                      Done
+                    </td>
+                  </tr>
+                  <tr onclick="numberScrubbingtaskListingPopup()">
+                    <td>01/08/22</td>
+                    <td>File Name</td>
+                    <td>32</td>
+                    <td>01/08/22</td>
+                    <td>01/08/22</td>
+                    <td class="high-span-score" data-column="Monthly Fee">
+                      <svg
+                        class="dot-padding"
+                        width="7"
+                        height="8"
+                        viewBox="0 0 7 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="3.5" cy="4" r="3.5" fill="#DB3E3E" />
+                      </svg>
+                      Cancelled
+                    </td>
+                  </tr>
+                  <tr onclick="numberScrubbingtaskListingPopup()">
+                    <td>01/08/22</td>
+                    <td>File Name</td>
+                    <td>32</td>
+                    <td>01/08/22</td>
+                    <td>01/08/22</td>
+                    <td class="span-score" data-column="Monthly Fee">
+                      <svg
+                        class="dot-padding"
+                        width="7"
+                        height="8"
+                        viewBox="0 0 7 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+                      </svg>
+                      Done
+                    </td>
+                  </tr>
+                  <tr onclick="numberScrubbingtaskListingPopup()">
+                    <td>01/08/22</td>
+                    <td>File Name</td>
+                    <td>32</td>
+                    <td>01/08/22</td>
+                    <td>01/08/22</td>
+                    <td class="span-score" data-column="Monthly Fee">
+                      <svg
+                        class="dot-padding"
+                        width="7"
+                        height="8"
+                        viewBox="0 0 7 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+                      </svg>
+                      Done
+                    </td>
+                  </tr>
+                  <tr onclick="numberScrubbingtaskListingPopup()">
+                    <td>01/08/22</td>
+                    <td>File Name</td>
+                    <td>32</td>
+                    <td>01/08/22</td>
+                    <td>01/08/22</td>
+                    <td class="span-score" data-column="Monthly Fee">
+                      <svg
+                        class="dot-padding"
+                        width="7"
+                        height="8"
+                        viewBox="0 0 7 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+                      </svg>
+                      Done
+                    </td>
+                  </tr>
+                  <tr onclick="numberScrubbingtaskListingPopup()">
+                    <td>01/08/22</td>
+                    <td>File Name</td>
+                    <td>32</td>
+                    <td>01/08/22</td>
+                    <td>01/08/22</td>
+                    <td class="span-score" data-column="Monthly Fee">
+                      <svg
+                        class="dot-padding"
+                        width="7"
+                        height="8"
+                        viewBox="0 0 7 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+                      </svg>
+                      Done
+                    </td>
+                  </tr>
+                  <tr onclick="numberScrubbingtaskListingPopup()">
+                    <td>01/08/22</td>
+                    <td>File Name</td>
+                    <td>32</td>
+                    <td>01/08/22</td>
+                    <td>01/08/22</td>
+                    <td class="span-score" data-column="Monthly Fee">
+                      <svg
+                        class="dot-padding"
+                        width="7"
+                        height="8"
+                        viewBox="0 0 7 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+                      </svg>
+                      Done
+                    </td>
+                  </tr>
+                  <tr onclick="numberScrubbingtaskListingPopup()">
+                    <td>01/08/22</td>
+                    <td>File Name</td>
+                    <td>32</td>
+                    <td>01/08/22</td>
+                    <td>01/08/22</td>
+                    <td class="span-score" data-column="Monthly Fee">
+                      <svg
+                        class="dot-padding"
+                        width="7"
+                        height="8"
+                        viewBox="0 0 7 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+                      </svg>
+                      Done
+                    </td>
+                  </tr>
+                  <tr onclick="numberScrubbingtaskListingPopup()">
+                    <td>01/08/22</td>
+                    <td>File Name</td>
+                    <td>32</td>
+                    <td>01/08/22</td>
+                    <td>01/08/22</td>
+                    <td class="span-score" data-column="Monthly Fee">
+                      <svg
+                        class="dot-padding"
+                        width="7"
+                        height="8"
+                        viewBox="0 0 7 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+                      </svg>
+                      Done
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- start of number scrubbing task listing -->
+            <div class="show-container">
+              <div class="show-details">
+                  <form action="#">
+                      <label class="show-label" for="show">Show</label>
+                      <select class="show-select-btn" name="show" id="cars">
+                      <option value="10">10</option>
+                      <option value="50">50</option>
+                      <option value="100">100</option>
+                      <option value="200">200</option>
+                      </select>
+                  </form>
+                  <span class="page-index">1-10 of 40</span>
+              </div>
+              <div>
+                  <i class="fa-solid fa-chevron-left show-list-left"></i>
+                  <h3 class="page-number active-page-number">1</h3>
+                  <h3 class="page-number">2</h3>
+                  <h3 class="page-number">3</h3>
+                  <h3 class="page-number">4</h3>
+                  <i class="fa-solid fa-chevron-right show-list-right"></i>
+              </div>
+         </div>
+                  <!-- end of number scrubbing task listing -->
+            <!-- show btn -->
+  
+          </div>
         </section>
         <section class="content-2">
           <div class="sub-btn-container">
@@ -1235,7 +1576,248 @@
       </form>
     </div>
   </div>
-  <div id="sub-tab-4">sub tab 2</div>
+  <div id="sub-tab-4">
+    <div class="rolling-table box-shadow-task-listing">
+      <table class="number-monitoring-table number-scrubing-task-listing">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Upload File</th>
+            <th>Count</th>
+            <th>Started</th>
+            <th>Finished On</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr onclick="numberMonitoringPopup()">
+            <td>01/08/22</td>
+            <td>File Name</td>
+            <td>32</td>
+            <td>01/08/22</td>
+            <td>01/08/22</td>
+            <td class="span-score" data-column="Monthly Fee">
+              <svg
+                class="dot-padding"
+                width="7"
+                height="8"
+                viewBox="0 0 7 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+              </svg>
+              Done
+            </td>
+          </tr>
+          <tr onclick="numberMonitoringPopup()">
+            <td>01/08/22</td>
+            <td>File Name</td>
+            <td>32</td>
+            <td>01/08/22</td>
+            <td>01/08/22</td>
+            <td class="span-score" data-column="Monthly Fee">
+              <svg
+                class="dot-padding"
+                width="7"
+                height="8"
+                viewBox="0 0 7 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+              </svg>
+              Done
+            </td>
+          </tr>
+          <tr onclick="numberMonitoringPopup()">
+            <td>01/08/22</td>
+            <td>File Name</td>
+            <td>32</td>
+            <td>01/08/22</td>
+            <td>01/08/22</td>
+            <td class="high-span-score" data-column="Monthly Fee">
+              <svg
+                class="dot-padding"
+                width="7"
+                height="8"
+                viewBox="0 0 7 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="3.5" cy="4" r="3.5" fill="#DB3E3E" />
+              </svg>
+              Cancelled
+            </td>
+          </tr>
+          <tr onclick="numberMonitoringPopup()">
+            <td>01/08/22</td>
+            <td>File Name</td>
+            <td>32</td>
+            <td>01/08/22</td>
+            <td>01/08/22</td>
+            <td class="span-score" data-column="Monthly Fee">
+              <svg
+                class="dot-padding"
+                width="7"
+                height="8"
+                viewBox="0 0 7 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+              </svg>
+              Done
+            </td>
+          </tr>
+          <tr onclick="numberMonitoringPopup()">
+            <td>01/08/22</td>
+            <td>File Name</td>
+            <td>32</td>
+            <td>01/08/22</td>
+            <td>01/08/22</td>
+            <td class="span-score" data-column="Monthly Fee">
+              <svg
+                class="dot-padding"
+                width="7"
+                height="8"
+                viewBox="0 0 7 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+              </svg>
+              Done
+            </td>
+          </tr>
+          <tr onclick="numberMonitoringPopup()">
+            <td>01/08/22</td>
+            <td>File Name</td>
+            <td>32</td>
+            <td>01/08/22</td>
+            <td>01/08/22</td>
+            <td class="span-score" data-column="Monthly Fee">
+              <svg
+                class="dot-padding"
+                width="7"
+                height="8"
+                viewBox="0 0 7 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+              </svg>
+              Done
+            </td>
+          </tr>
+          <tr onclick="numberMonitoringPopup()">
+            <td>01/08/22</td>
+            <td>File Name</td>
+            <td>32</td>
+            <td>01/08/22</td>
+            <td>01/08/22</td>
+            <td class="span-score" data-column="Monthly Fee">
+              <svg
+                class="dot-padding"
+                width="7"
+                height="8"
+                viewBox="0 0 7 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+              </svg>
+              Done
+            </td>
+          </tr>
+          <tr onclick="numberMonitoringPopup()">
+            <td>01/08/22</td>
+            <td>File Name</td>
+            <td>32</td>
+            <td>01/08/22</td>
+            <td>01/08/22</td>
+            <td class="span-score" data-column="Monthly Fee">
+              <svg
+                class="dot-padding"
+                width="7"
+                height="8"
+                viewBox="0 0 7 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+              </svg>
+              Done
+            </td>
+          </tr>
+          <tr onclick="numberMonitoringPopup()">
+            <td>01/08/22</td>
+            <td>File Name</td>
+            <td>32</td>
+            <td>01/08/22</td>
+            <td>01/08/22</td>
+            <td class="span-score" data-column="Monthly Fee">
+              <svg
+                class="dot-padding"
+                width="7"
+                height="8"
+                viewBox="0 0 7 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+              </svg>
+              Done
+            </td>
+          </tr>
+          <tr onclick="numberMonitoringPopup()">
+            <td>01/08/22</td>
+            <td>File Name</td>
+            <td>32</td>
+            <td>01/08/22</td>
+            <td>01/08/22</td>
+            <td class="span-score" data-column="Monthly Fee">
+              <svg
+                class="dot-padding"
+                width="7"
+                height="8"
+                viewBox="0 0 7 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="3.5" cy="4" r="3.5" fill="#048648" />
+              </svg>
+              Done
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <div class="show-container">
+          <div class="show-details">
+              <form action="#">
+                  <label class="show-label" for="show">Show</label>
+                  <select class="show-select-btn" name="show" id="cars">
+                  <option value="10">10</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                  <option value="200">200</option>
+                  </select>
+              </form>
+              <span class="page-index">1-10 of 40</span>
+          </div>
+          <div>
+              <i class="fa-solid fa-chevron-left show-list-left"></i>
+              <h3 class="page-number active-page-number">1</h3>
+              <h3 class="page-number">2</h3>
+              <h3 class="page-number">3</h3>
+              <h3 class="page-number">4</h3>
+              <i class="fa-solid fa-chevron-right show-list-right"></i>
+          </div>
+     </div>
+              <!-- end of number scrubbing task listing -->
+  </div>
         </section>
         <!-- end of number mapping -->
 
@@ -1368,6 +1950,7 @@
 
     <script src="js/jquery-3.6.1.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/dropdown.js"></script>
     <!-- Function used to shrink nav bar removing paddings and adding black background -->
     <script src="js/dashboard.js"></script>
     <script src="js/main.js"></script>

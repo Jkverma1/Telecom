@@ -42,7 +42,7 @@
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+.rolling-table::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
 
@@ -323,11 +323,17 @@
   .Number-detail-background-overlay-popup {
     height: 1700px;
   }
+  .Number-scrubbing-background-overlay-popup {
+    height: 1500px;
+  }
 }
 
 @media screen and (max-width: 675px) {
   .Number-detail-background-overlay-popup {
     height: 2100px;
+  }
+  .Number-scrubbing-background-overlay-popup {
+    height: 1700px;
   }
   .monitoring-main-top-menu {
     padding: 0 15px;

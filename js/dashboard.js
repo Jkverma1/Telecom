@@ -70,6 +70,21 @@ function closenumberMonitoringPopup() {
   ).style.display = "none";
 }
 
+function numberScrubbingtaskListingPopup(){
+  document.querySelector(".Number-scrubbing-task-listing-popup").style.display = "unset";
+  document.querySelector(
+    ".Number-scrubbing-background-overlay-popup"
+  ).style.display = "unset";
+
+}
+
+function closenumberScrubbingtaskListingPopup(){
+  document.querySelector(".Number-scrubbing-task-listing-popup").style.display = "none";
+  document.querySelector(
+    ".Number-scrubbing-background-overlay-popup"
+  ).style.display = "none";
+}
+
 function monitoringUploadBtn() {
   document.querySelector(".m-s-21").style.marginTop = "21px";
   document.querySelector(".back-to-listing").style.display = "unset";
