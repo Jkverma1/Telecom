@@ -475,6 +475,10 @@ section.active {
   background-color: rgba(0, 68, 59, 0.2);
 }
 
+.task-popup-head {
+  font-weight: 600;
+}
+
 .state-distribution-background-overlay-popup {
   display: none;
   position: absolute;
@@ -498,7 +502,8 @@ section.active {
 .confirm-payment-task-popup,
 .Number-detail-popup,
 .Number-scrubbing-task-listing-popup,
-.mapping-state-distribution-popup {
+.mapping-state-distribution-popup,
+.fraud-description-popup {
   display: none;
   position: absolute;
   top: 80px;

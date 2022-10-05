@@ -176,3 +176,19 @@ function closestateDistributionPopup() {
     ".state-distribution-background-overlay-popup"
   ).style.display = "none";
 }
+
+function FraudDescription() {
+  document.querySelector(".fraud-description-popup").style.display =
+    "unset";
+  document.querySelector(
+    ".state-distribution-background-overlay-popup"
+  ).style.display = "unset";
+}
+
+function closeFraudDescription() {
+  document.querySelector(".fraud-description-popup").style.display =
+    "none";
+  document.querySelector(
+    ".state-distribution-background-overlay-popup"
+  ).style.display = "none";
+}

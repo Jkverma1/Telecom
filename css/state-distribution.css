@@ -964,21 +964,21 @@
 
 .pie-slice-head1 {
   position: absolute;
-  top: 135.56px;
+  top: 125.56px;
   right: 39.39px;
   z-index: 1;
 }
 
 .pie-slice-head2 {
   position: absolute;
-  top: 45.36px;
+  top: 35.36px;
   left: 82.64px;
   z-index: 1;
 }
 
 .pie-slice-head3 {
   position: absolute;
-  top: 146.03px;
+  top: 136.03px;
   left: 40.47px;
   z-index: 1;
 }
@@ -989,6 +989,16 @@
   grid-template-columns: auto auto;
   justify-content: space-between;
   column-gap: 133px;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.three-pie-chart-Detail-container {
+  display: grid;
+  margin: 24px 32px 0;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  column-gap: 74px;
   vertical-align: middle;
   align-items: center;
 }
@@ -1025,6 +1035,57 @@
   border-bottom: 1px solid #e6e5e5;
 }
 
+@media screen and (max-width: 1228px) {
+  .three-pie-chart-Detail-container {
+    column-gap: 45.1px;
+  }
+}
+
+/* 3 circles */
+
+.pie-circle-1,
+.pie-circle-2,
+.pie-circle-3 {
+  width: 193.5px;
+  height: 195.3px;
+  border-radius: 50%;
+}
+
+.pie-circle-1 {
+  background: rgb(0, 143, 125, 0.9);
+  position: relative;
+  left: 40%;
+  transform: translate(-50%, 0);
+  bottom: -67.59px;
+}
+
+.bottom-circle-container {
+  display: flex;
+}
+
+.pie-circle-2 {
+  background: rgb(1, 42, 36, 0.9);
+}
+
+.pie-circle-3 {
+  position: relative;
+  left: -67.59px;
+  background: rgb(62, 75, 75, 0.9);
+}
+
+.three-pie-text {
+  position: relative;
+  top: 50%;
+  left: 30.97px;
+  transform: translate(0, 50%);
+  font-family: "M PLUS 1";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+}
+
 @media screen and (max-width: 1175px) {
   .pie-chart-table {
     width: 337px;
@@ -1039,9 +1100,34 @@
     width: 265px;
     height: 265px;
   }
+  .three-pie-chart-table {
+    width: 300px;
+  }
+  .pie-circle-1,
+  .pie-circle-2,
+  .pie-circle-3 {
+    width: 142.13px;
+    height: 142.13px;
+  }
+  .pie-circle-1 {
+    bottom: -49.18px;
+  }
+
+  .pie-circle-3 {
+    left: -49.18px;
+  }
 }
 
 @media screen and (max-width: 700px) {
+  .three-pie-chart {
+    display: grid;
+    justify-content: center;
+  }
+  .three-pie-chart-Detail-container {
+    grid-template-columns: auto;
+    justify-content: center;
+    row-gap: 24px;
+  }
   .pie-chart-Detail-container {
     grid-template-columns: auto;
     justify-content: center;

@@ -818,6 +818,11 @@ body {
   color: #ffffff;
   cursor: pointer;
 }
+
+button {
+  cursor: pointer;
+}
+
 .top-menu-btn:hover .upload-btn-icon {
   fill: #fff;
 }
