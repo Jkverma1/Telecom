@@ -468,7 +468,6 @@ section.active {
 .Number-scrubbing-background-overlay-popup {
   display: none;
   position: absolute;
-  overflow: scroll;
   top: 0;
   height: 1500px;
   z-index: 1;
