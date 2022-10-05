@@ -27,78 +27,55 @@
 .number-scrubing-task-listing td {
   font: 600;
 }
-
-.showLeft {
-  background-color: white !important;
-  border: 1px solid white !important;
-  text-shadow: white !important;
-  color: black !important;
-  padding: 10px;
-}
-.icons li {
-  background: none repeat scroll 0 0 black;
-  height: 7px;
-  width: 7px;
-  line-height: 0;
-  list-style: none outside none;
-  margin-right: 15px;
-  margin-top: 3px;
-  vertical-align: top;
-  border-radius: 50%;
-  pointer-events: none;
-}
-.btn-left {
-  left: 0.4em;
-}
-.btn-right {
-  right: 0.4em;
-}
-.btn-left,
-.btn-right {
-  position: absolute;
-  top: 0.24em;
-}
-.dropbtn {
-  background-color: #4caf50;
-  position: fixed;
-  color: white;
-  font-size: 16px;
-  border: none;
+.vertical-dot-menu {
+  margin-left: 25px;
   cursor: pointer;
-}
-.dropbtn:hover,
-.dropbtn:focus {
-  background-color: #3e8e41;
-}
-.dropdown {
-  position: absolute;
-  display: inline-block;
-  right: 0.4em;
-}
-.dropdown-content {
-  display: none;
   position: relative;
-  margin-top: 60px;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  border: none;
+}
+
+.vertical-dot-menu::before {
+  float: right;
+  content: "\2807";
+  font-size: 13px;
+}
+
+.task-listing-vertical-menu {
+  display: none;
+  position: absolute;
+  top: 18px;
+  right: 10px;
   z-index: 1;
+  background-color: white;
+  width: 120px;
+  background: #ffffff;
+  box-shadow: 0px 2px 16px -4px rgba(72, 68, 68, 0.16);
+  list-style-type: none;
 }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+.active-vertical-menu {
+  display: unset;
 }
 
-.dropdown a:hover {
-  background-color: #f1f1f1;
-}
+.task-listing-vertical-menu-list-item {
+  /* Button text */
 
-.show {
-  display: block;
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height, or 138% */
+  padding: 8px;
+  /* text 2 */
+  border-bottom: 1px solid #e7e7e7;
+
+  color: #3e4b4b;
+}
+.task-listing-vertical-menu-list-item:hover {
+  background: #718380;
+  color: #ffffff;
 }
 
 .scrubbing-task-record-detail {
