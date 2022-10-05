@@ -161,3 +161,18 @@ function taskListingDetail() {
   document.querySelector(".number-mapping-detail-container").style.display =
     "unset";
 }
+function stateDistributionPopup() {
+  document.querySelector(".mapping-state-distribution-popup").style.display =
+    "unset";
+  document.querySelector(
+    ".state-distribution-background-overlay-popup"
+  ).style.display = "unset";
+}
+
+function closestateDistributionPopup() {
+  document.querySelector(".mapping-state-distribution-popup").style.display =
+    "none";
+  document.querySelector(
+    ".state-distribution-background-overlay-popup"
+  ).style.display = "none";
+}

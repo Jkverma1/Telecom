@@ -474,6 +474,17 @@ section.active {
   width: 100%;
   background-color: rgba(0, 68, 59, 0.2);
 }
+
+.state-distribution-background-overlay-popup {
+  display: none;
+  position: absolute;
+  top: 0;
+  height: 1100px;
+  z-index: 1;
+  width: 100%;
+  background-color: rgba(0, 68, 59, 0.2);
+}
+
 .Number-detail-background-overlay-popup::-webkit-scrollbar {
   display: none;
 }
@@ -486,7 +497,8 @@ section.active {
 .renew-price-popup,
 .confirm-payment-task-popup,
 .Number-detail-popup,
-.Number-scrubbing-task-listing-popup {
+.Number-scrubbing-task-listing-popup,
+.mapping-state-distribution-popup {
   display: none;
   position: absolute;
   top: 80px;
